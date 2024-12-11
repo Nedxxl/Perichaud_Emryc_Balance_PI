@@ -73,7 +73,7 @@ void TTask1::task(void)
 			screen->dispStr(1, 8, "Unite : " + std::to_string(partage->getUniteMesure()));
 		}
 
-		if (mqtt->loop(100) != 0)
+		if (mqtt->loop(50) != 0)
 			mqtt->reconnect();
 
 		//usleep(250000); // 250 ms
